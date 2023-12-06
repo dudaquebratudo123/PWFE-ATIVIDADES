@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking de times</title>
+    <style>
+        .conteiner{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+        }
+        .caixa1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .caixa2{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #div1 , #div2, #div3{
+          width: 70px;
+          height: 70px;
+          padding: 10px;
+          box-shadow:0 0 10px rgb(0, 0, 0);
+        }
+        #drag1, #drag2, #drag3{
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Classifique seus times preferidos no ranking abaixo</h1>
+    <div class="conteiner">
+        <div class="caixa1">
+            <p>MINAS TENIS CLUBE</p>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br>
+            <p>SESC FLAMENGO</p>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br>
+            <p>DENTIL PRAIA CLUBE</p>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="caixa2">
+            <img id="drag2" src="IMG/dois.png" draggable="true" ondragstart="drag(event)"> 
+            <img id="drag1" src="IMG/um.png" draggable="true" ondragstart="drag(event)"> 
+            <img id="drag3" src="IMG/tres.png" draggable="true" ondragstart="drag(event)">
+            <!-- draggable = true permite que a imagem seja arrastada quando o usuário interagir com ela.-->
+            <!--quando esse evento de arrastar ocorre, a função drag(event) é chamada.-->
+        </div>
+    </div>
+
+    <script>
+        function allowDrop(ev) { //o allowDrop(ev) permite a soltar elementos na caixa
+          ev.preventDefault();   //evita que o navegador trate o evento de soltar como padrão
+        }
+        
+        function drag(ev) { //drag(ev) é chamada quando o elemento de imagem é arrastado. Define os dados que serão transferidos
+          ev.dataTransfer.setData("text", ev.target.id); //definir os dados que serão transferidos durante uma operação de arrastar e soltar
+        }
+        
+        function drop(ev) { // drop(ev) é chamada quando o elemento de imagem é solto na caixa. Basicamente adiciona a imagem
+          ev.preventDefault(); //evita que o navegador trate o evento de soltar como padrão
+          var data = ev.dataTransfer.getData("text"); //obtem os dados transferidos durante a operação de arrastar e soltar atraves do ID
+          ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+
+
+
+
+

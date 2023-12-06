@@ -1,0 +1,251 @@
+#cabeçalho{
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    background-color: rgba(69, 12, 88, 0.832);
+    border-radius: 15px solid #ffffff00;
+    color: aliceblue;
+    font-size: 18px;
+    width: 1519px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cabeçalho:hover{
+    background-color: rgba(69, 12, 88, 0.651);
+}
+
+#logo{
+    width: 150px;
+    height: 100px;
+}
+
+.redes{
+    width: 30px;
+    height: 30px;
+}
+
+#label{
+    height: 19px;
+    border: 1px solid rgb(255, 252, 252);
+    border-radius: 5px;
+    background-color: rgba(105, 6, 6, 0);
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+#hr{
+    margin-top: 10px;
+    width: 800px;
+    z-index: -1;
+}
+
+a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    color: #fff;
+}
+
+p:hover{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color:rgba(54, 3, 71, 0.832);
+    transition: transform 0.10s ease-in-out;
+    text-shadow: #fff;
+}
+
+img:hover{
+    box-shadow:0 0 14px rgb(255, 255, 255);
+    transition: 300ms linear;
+}
+
+/*menu*/
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height:40px;
+}
+    
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(227, 227, 227, 0.821);
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 100;
+}
+
+.dropdown-content a:hover{
+    background-color: rgba(69, 12, 88, 0.368);
+    border-radius: 10px;
+}
+    
+.dropdown-content a{
+    color: rgb(72, 71, 69);
+    padding: 15px 20px;
+    display: block;
+}
+    
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.mensagem{
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.658);
+    color: #686868;
+    border-radius: 20px solid #ffffff00;
+    width: 1519px;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*corpo2*/
+.corpo2{
+  width: 1519px;
+  height: 570px;
+  box-shadow:0 0 10px rgb(0, 0, 0);
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#back-img{
+  position: fixed;
+  height: 570px;
+  width: 1520px;
+}
+
+/*tirar checkbox*/
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+display: none;
+}
+
+/*virar o cartão*/
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  width:50px;
+  height: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #4d0d68;
+}
+
+.card-3d-wrap {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  transform-style: preserve-3d;
+  margin-top: 60px;
+  margin-left: -30px;
+}
+.card-3d-wrapper {
+  width: 500px;
+  height: 400px;
+  position:absolute;
+  transform-style: preserve-3d;
+  transition: all 600ms ease-out; 
+}
+.card-front, .card-back {
+  position: absolute;
+  box-shadow:0 0 10px rgb(172, 172, 172);
+  width: 500px;
+  height: 400px;
+  margin-top: 20px;
+  background-color: #d1d3dc;
+  border-radius: 6px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+}
+.center-wrap{
+  position: absolute;
+  width: 100%;
+  padding: 0 35px;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 35px) perspective(100px);
+  z-index: 20;
+  display: block;
+}
+/*formulario*/
+.form-group{ 
+  position: relative;
+  display: block;
+  padding: 10px;
+}
+.form-style {
+  height: 48px;
+  width: 350px;
+  padding-left: 45px;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff00;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+.form-style:focus,
+.form-style:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+
+/*botões*/
+.btn{  
+  border: none;
+  border-radius: 15px;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background-color: #46094d;
+  color: #cbcaca;
+  text-shadow: #fff;
+  margin-top: 30px;
+  margin-left: 160px;
+}
+.btn:hover{  
+  background-color: #46094da1;
+  color: #ffffffa3;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+
+h3{
+  font-size: 22px;
+  letter-spacing: 3px;
+  color: #3f0842;
+}
+
+#l-center{
+  margin-left: 163px;
+}
+
+#c-center{
+  margin-left: 135px;
+}

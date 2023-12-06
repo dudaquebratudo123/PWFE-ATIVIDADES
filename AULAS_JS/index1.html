@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        //telinha na página
+        alert("Olá!");
+        //telinha na página para escrever
+        prompt("Qual o seu nome?");
+        //criando variavle nome
+        var nome = prompt("Qual seu nome?");
+        alert("Primeiro conteúdo");
+        alert("Segundo conteúdo");
+        //fazendo mensagens aparecerem no console
+        console.log("Primeiro conteúdo no console");
+        console.log("Segundo conteúdo no console");
+        //fazendo variavel nome aparecer no consol
+        console.log(nome);
+        */
+        /*
+        //testando tipos de variaveis
+        var quantidade = 1;
+        var nome = "Fox";
+        var decimal = 1.34;
+        var verdadeiro = true;
+        console.log(typeof quantidade);
+        console.log(typeof nome);
+        console.log(typeof decimal);
+        console.log(typeof verdadeiro);
+        */
+        /*
+        var numero = '12.46';
+        numero = parseFloat(numero); //retorna o numero de ponto flutuante
+        var outroNumero = '2';
+        outroNumero = parseInt(outroNumero); //retorna um numero inteiro
+        var resultado = numero + outroNumero;
+        window.document.write("Tipo do dado " + numero + " = " + typeof(numero) + "<br>");
+        window.document.write("Tipo do dado " + outroNumero + " = " + typeof(outroNumero) + "<br>");
+        window.document.writeln("Resultado: " + resultado);
+        */
+        /*
+        var numero = 12;
+        numero = numero.toString();
+        var outroNumero = 2.2;
+        outroNumero = outroNumero.toString();
+        var resultado = numero + outroNumero;
+        window.document.write("Tipo do dado " + numero + " = " + typeof(numero) + "<br>");
+        window.document.write("Tipo do dado " + outroNumero + " = " + typeof(outroNumero) + "<br>");
+        window.document.writeln("Resultado: " + resultado);
+        */
+        /*
+        var diferente = (1!=1);
+        console.log(diferente);//o resultado é flase
+        var diferente = (1!=2);
+        console.log(diferente);//o resultado é true
+        */
+        /*
+        var salarioMensal = 1000;
+        var salarioAnual = 13*salarioMensal + salarioMensal*0.10;
+        console.log(salarioAnual); //imprime
+        */
+        /*
+        var divisor = 0;
+        var dividendo = 1;
+        if(divisor!=0){
+            var resultado = dividendo / divisor;
+            console.log(resultado);
+        }else{
+            console.log("Não posso executar uma divisão")
+        }
+        */
+       /*
+        var tipoDoFuncionario = "estagiario";
+        salarioMensal = 700;
+        if(tipoDoFuncionario == "estagiario" || tipoDoFuncionario == "clt"){
+            if(salarioMensal > 0 && salarioMensal < 1000){
+                var salarioAnual = 13*salarioMensal + salarioMensal*0.05;
+                console.log(salarioAnual);
+            }else{
+                if(salarioMensal < 2000){
+                    var salarioAnual = 13*salarioMensal + salarioMensal*0.10;
+                    console.log(salarioAnual);
+                }
+            }
+        }
+        */
+       /*
+        var dia;
+        switch(new Date().getDay()){
+            case 0:
+                dia = "domingo";  break;
+            case 1:
+                dia = "segunda";  break;
+            case 2:
+                dia = "terça";  break;
+            case 3:
+                dia = "quarta";  break;
+            case 4:
+                dia = "quinta";  break;
+            case 5:
+                dia = "sexta";  break;   
+            case 6:
+                dia = "sabado";  break;
+        }
+        console.log("Hoje é: " + dia);
+        */
+        /*
+        //for
+        const carro = ["Fiat", "Volvo", "BMW"];
+        for(var i=0; i < carro.length; i++){
+            document.write(carro[i] + "<br>");
+        }
+        document.getElementById("demo").innerHTML = carro;
+        //for each
+        var txt = "";
+        var pessoa = {fname:"John", name:"José", idade:25};
+        for(var x in pessoa){
+            txt = txt + " " + pessoa[x];
+        }
+        document.getElementById("nom").innerHTML = txt;
+        console.log(txt);
+        */
+       var somapares = 0;
+       var i = 1;
+
+       while(true){
+            if(i % 2 != 0)
+                document.write("<br>Valor de i: " + i);
+                document.write("<br>Valor da soma: " + (somapares += i) + "<br>") 
+           
+            if(i == 10)
+            break;
+        i++;
+        document.write("<br>Valor de i incrementado: " + i);
+       }
+       // window.document.write(somapares);
+       //console.log(somapares);
+    </script>
+    <!--id para o teste do for-->
+    <p id="demo"></p>
+    <p id="nom"></p>
+</body>
+</html>

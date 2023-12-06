@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="meuCanvas" width="1000" height="1000"></canvas>
+    <script>
+        let canvas = document.getElementById("meuCanvas");
+        const ctx = canvas.getContext("2d"); //passa a dimensão para o seu desenho
+        ctx.beginPath(); //new path
+        ctx.moveTo(20, 20); //ponto de inicio
+        ctx.lineTo(100,20); 
+        ctx.lineTo(175,100);
+        ctx.lineTo(20,100);
+        ctx.lineTo(20,20);
+        ctx.stroke(); //desenhando
+    </script>
+</body>
+</html>

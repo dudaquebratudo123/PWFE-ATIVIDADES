@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Arquivo css-->
+    <link rel="stylesheet" href="CSS/pagina-espelho.css">
+    <title>Agradecimento</title>
+</head>
+<body>
+    <div id="sombra"></div>
+        <!--conteiner-->
+        <div id="cabeçalho">
+            <a href="Principal.html"><img id="logo" src="IMG/123m-sem-escrita.png"></a>
+            <a href="Login.html"><p>LOGIN</p></a>
+            <div class="dropdown">
+                <div class="menu"><p>EXPLORE O BRASIL</p></div>
+                    <div class="dropdown-content">
+                        <a href="Info-gerais.html">  Informações Gerais</a>
+                        <a href="Cheklist-viagem.html">  Checkist de viagem </a>      
+                    </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="menu"><p>AGENDE</p></div>
+                    <div class="dropdown-content">
+                        <a href="Passeios.html"> Passeios </a>
+                        <a href="Acomodações.html"> Acomodações</a>      
+                    </div>
+            </div>
+            <a href="Favoritos.html"><p>FAVORITOS</p></a>
+            <input type="text" placeholder="      Busque seu destino" id="label">
+            <img class="redes" src="IMG/facebook (1).png">
+            <img class="redes" src="IMG/instagram.png">
+            <img class="redes" src="IMG/twitter.png">
+        </div>
+        <div class="mensagem">
+            <h4>A equipe da 123 trilhas agradece sua compra</h4>
+        </div>
+        <div class="corpo2">
+            <div class="titulo-c2"> 
+                 <b>Agradecemos pela confianca e ficamos felizes em realizar um de seus sonhos! Compartilhe sua felicidade com a gente</b> 
+            </div>
+            <div class="espelho">
+                <button id="btn" onclick="startCamera()">Abrir camera</button>
+                <video id="videoElement" width="800px" height="100%" autoplay></video>
+                <button id="btn" onclick="stopCamera()">Fechar camera</button>
+            </div>
+        </div>
+
+        <script>
+            let videoStream;
+            async function startCamera(){
+                const videoElement = document.getElementById("videoElement");
+                try{
+                    videoStream = await navigator.mediaDevices.getUserMedia({video : true}); //ativando a camera
+                    videoElement.srcObject = videoStream;       //um objeto vai coletar os frames da camera
+                }catch(error){
+                    console.error('Erro ao abrir a câmera');
+                    alert('Erro ao abrir a câmera');
+                }
+            }
+    
+            async function stopCamera(){
+                const videoElement = document.getElementById("videoElement");
+                if(videoStream){
+                    const tracks = videoStream.getTracks(); //tracks são frames 
+                    tracks.forEach(track => track.stop());
+                    videoElement.srcObject = null;;
+                }
+            }
+        </script>
+</body>
+</html>

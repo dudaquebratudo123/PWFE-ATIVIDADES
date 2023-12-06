@@ -1,0 +1,386 @@
+#cabeçalho{
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    background-color: rgba(26, 7, 104, 0.936);
+    border-radius: 15px solid #ffffff00;
+    color: aliceblue;
+    font-size: 18px;
+    width: 1519px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cabeçalho:hover{
+    background-color: rgba(26, 7, 104, 0.678);
+}
+
+#logo{
+    width: 150px;
+    height: 50px;
+}
+
+.redes{
+    width: 20px;
+    height: 20px;
+}
+
+#label{
+    height: 19px;
+    border: 1px solid rgb(255, 252, 252);
+    border-radius: 5px;
+    background-color: rgba(26, 7, 104, 0.344);
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+#hr{
+    margin-top: 10px;
+    width: 800px;
+    z-index: -1
+}
+
+a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    color: #fff
+}
+
+p:hover{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color:rgb(26, 7, 104);
+    transition: transform 0.10s ease-in-out;
+    text-shadow: #fff;
+}
+
+img:hover{
+    box-shadow:0 0 14px rgb(255, 255, 255);
+    transition: 300ms linear;
+}
+
+/*menu*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height:40px;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(227, 227, 227, 0.821);
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 100;
+}
+
+.dropdown-content a:hover{
+    background-color: rgba(26, 7, 104, 0.241);
+    border-radius: 10px;
+}
+   
+.dropdown-content a{
+    color: rgb(72, 71, 69);
+    padding: 15px 20px;
+    display: block;
+}
+   
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.mensagem{
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.658);
+    color: #6d6d6d;
+    border-radius: 20px solid #ffffff00;
+    width: 1519px;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*corpo2*/
+.corpo2{
+    width: 1519px;
+    height: 630px;
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lato', serif ;
+}
+
+
+/*lado direito*/
+
+.caixa1{
+    background-color: #ffffffce;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*canto superior*/
+.meu-carrinho{
+    width: 100%;
+    height: 320px;
+}
+
+.titulo{
+    font-size: 20px;
+    width: 680px;
+    margin-left: 30px;
+}
+
+.continuar-comprando{
+   float: right;
+   font-size: 12px;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.item-carrinho{
+    width: 700px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-pt1{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.item-pt2{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-item{
+    width: 140px;
+    height: 90px;
+}
+
+.linha{
+    width: 100%;
+    height:20px;
+}
+
+.local-item{
+    font-size: 14px;
+}
+
+/*caixa adicinar ou remover*/
+
+.caixa-quantidade{
+    border:2px solid grey;
+    width: 70px;
+    height: 20px;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.remover{
+    height: 100%;
+    width: 45%;
+}
+
+.qnt-itens{
+    height: 100%;
+    width: 20%;
+}
+
+
+.adicionar{
+    height: 100%;
+    width: 40%;
+}
+
+.add-remo{
+    width: 15px;
+    margin-left: 5px;
+    margin-top:3px
+}
+
+/*canto inferior*/
+.valor-total{ 
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.linha-inf{
+    width: 680px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+.float-right{
+    float: right;
+    color: #8b8888;
+    font-size: 14px;
+}
+
+#total, #valor-total{
+    color: rgba(52, 17, 193, 0.936);
+}
+
+#valor-total{
+    float: right;
+}
+
+hr{
+    width: 700px;
+}
+
+/*lado direito*/
+
+.caixa2{
+    background-color: #8c8c8cae;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteudo-pag{
+    width: 100%;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pagamento{
+    border: 2px solid pink;
+    width: 100%;
+    height: 50%;
+}
+
+.titulo-c2{
+    font-size: 20px;
+    width: 680px;
+    margin-left: 30px;
+    color: rgba(26, 7, 104, 0.936);
+}
+
+.hr-pag{
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    border: none;
+}
+
+#sub-tit{
+    margin-left: 30px;
+    margin-top: -20px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.bandeiras{
+    width: 300px;
+}
+
+.cartao{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-card{
+    background-color: #ffffff00;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 230px;
+    height: 32px;
+    border:none;
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+    
+}
+
+.tipo-pagamento{
+    border: 1px solid rgba(230, 228, 228, 0.873);
+    width: 330px;
+    height: 39px;
+    margin-left: 30px;
+    display: flex;
+}
+
+
+.bolinha{
+    border:2px solid #fff;
+    margin-left: 13px;
+    cursor:pointer;
+    margin-right: 20px;
+}
+
+.bandeiras{
+    width: 160px;
+    height: 100px;
+    padding: 50px;
+    margin-top: -85px;
+}
+
+.bandeiras:hover, .info-card:hover{
+    border: none;
+    outline: none;
+    box-shadow:0 0 0px rgba(255, 255, 255, 0);
+}
+
+.txt1-tp{
+    font-size: 17px;
+    margin-top: 9px;
+}
+
+#pix-desc{
+    margin-left: 150px;
+    margin-top: 8px;
+    background-color: rgba(37, 17, 216, 0.634);
+    color: #fff;
+    height: 20px;
+}
+
+.comprar-agora{
+    box-shadow:0 0 5px rgb(0, 0, 0);
+    width: 700px;
+    height: 40px;
+    background-color:rgba(26, 7, 104, 0.796);
+    color:#fff;
+    font-size: 16px;
+    margin-left: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.comprar-agora:hover{
+    background-color:rgba(37, 12, 137, 0.667);
+    box-shadow:0 0 10px rgb(0, 0, 0);
+}

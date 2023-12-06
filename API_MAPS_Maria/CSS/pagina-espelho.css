@@ -1,0 +1,153 @@
+#cabeçalho{
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    background-color: rgba(26, 7, 104, 0.936);
+    border-radius: 15px solid #ffffff00;
+    color: aliceblue;
+    font-size: 18px;
+    width: 1519px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cabeçalho:hover{
+    background-color: rgba(26, 7, 104, 0.678);
+}
+
+#logo{
+    width: 150px;
+    height: 50px;
+}
+
+.redes{
+    width: 20px;
+    height: 20px;
+}
+
+#label{
+    height: 19px;
+    border: 1px solid rgb(255, 252, 252);
+    border-radius: 5px;
+    background-color: rgba(26, 7, 104, 0.344);
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+#hr{
+    margin-top: 10px;
+    width: 800px;
+    z-index: -1
+}
+
+a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    color: #fff
+}
+
+p:hover{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color:rgb(26, 7, 104);
+    transition: transform 0.10s ease-in-out;
+    text-shadow: #fff;
+}
+
+img:hover{
+    box-shadow:0 0 14px rgb(255, 255, 255);
+    transition: 300ms linear;
+}
+
+/*menu*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height:40px;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(227, 227, 227, 0.821);
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 100;
+}
+
+.dropdown-content a:hover{
+    background-color: rgba(26, 7, 104, 0.241);
+    border-radius: 10px;
+}
+   
+.dropdown-content a{
+    color: rgb(72, 71, 69);
+    padding: 15px 20px;
+    display: block;
+}
+   
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.mensagem{
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.658);
+    color: #6d6d6d;
+    border-radius: 20px solid #ffffff00;
+    width: 1519px;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*corpo2*/
+.corpo2{
+    width: 1519px;
+    height: 630px;
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-c2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1515px;
+    height: 100px;
+    font-size: 27px;
+    color: rgb(26, 7, 104);
+}
+
+.espelho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1515px;
+    height: 500px;
+}
+
+#btn{
+    background-color: rgb(26, 7, 104);
+    color: white;
+    font-size: 12px;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: solid rgb(26, 7, 104);
+}

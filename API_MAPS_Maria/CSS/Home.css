@@ -1,0 +1,100 @@
+/*imagem de fundo*/
+#fundo{
+    position: fixed;
+    width: 1536px;
+    height: 760px;
+    margin-left: -8px;
+    margin-top: -10px;
+    z-index: -1;
+}
+
+#sombra{
+    background-color: rgba(150, 99, 40, 0.401);
+    position: fixed;
+    width: 100%;
+    height: 1000px;
+    margin-top: -10px;
+    margin-left: -10px;
+    z-index: -1;
+}
+
+/*cabeçalho*/
+
+#cabeçalho{
+    letter-spacing: 1px;
+    font-size:16px;
+    color: aliceblue;
+    width: 1300px;
+    height: 92px;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#efeitos:hover{
+    transform: capitalize;
+    transition: 0.3s ease-in-out;
+    color: rgb(69, 31, 8);
+}
+
+
+
+.redes{
+    width: 30px;
+    height: 30px;
+}
+
+#label{
+    height: 18px;
+    border: 1px solid rgb(255, 252, 252);
+    background-color: rgba(63, 61, 61, 0);
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+#hr{
+    margin-top: 10px;
+    width: 800px;
+    z-index: -1;
+}
+
+#logo{
+    width: 300px;
+    height: 300px;
+}
+
+a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    color: #fff;
+}
+
+p:hover{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color: rgb(110, 56, 8);
+    transition: transform 0.10s ease-in-out;
+}
+
+img:hover{
+    box-shadow:0 0 14px rgb(116, 42, 11);
+    transition: 300ms linear;
+}
+
+/*corpo2*/
+.corpo2{
+    background-color: #fff;
+    width: 1521px;
+    height: 1400px;
+    margin-left: -10px;
+    margin-top:700px;
+    margin-bottom: -10px;
+}

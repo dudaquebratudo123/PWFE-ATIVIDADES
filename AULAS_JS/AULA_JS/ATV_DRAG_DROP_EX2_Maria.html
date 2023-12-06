@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinação de roupas</title>
+    <style>
+        .conteiner{
+            width: 1000px;
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+
+        }
+        .caixa1, .caixa2, .caixa3, .caixa4{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #div1 , #div2, #div3{
+          width: 100px;
+          height: 100px;
+          box-shadow:0 0 10px rgb(0, 0, 0);
+        }
+        #drag1, #drag2, #drag3, #drag4, #drag5, #drag6, #drag7, #drag8, #drag9{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Monte a combinação de roupas perfeita pra voce</h1>
+    <div class="conteiner">
+        <div class="caixa1">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="caixa2">
+            <img id="drag1" src="IMG/blusa (1).png" draggable="true" ondragstart="drag(event)"> 
+            <img id="drag2" src="IMG/blusa.png" draggable="true" ondragstart="drag(event)"> 
+            <img id="drag3" src="IMG/agasalho.png" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="caixa3">
+            <img id="drag4" src="IMG//saia.png" draggable="true" ondragstart="drag(event)"> 
+            <img id="drag5" src="IMG/shorts.png" draggable="true" ondragstart="drag(event)"> 
+            <img id="drag6" src="IMG/calca.png" draggable="true" ondragstart="drag(event)">
+        </div>
+        <div class="caixa4">
+            <img id="drag7" src="IMG/chinelo.png" draggable="true" ondragstart="drag(event)"> 
+            <img id="drag8" src="IMG/sapatin.png" draggable="true" ondragstart="drag(event)"> 
+            <img id="drag9" src="IMG/tenis.png" draggable="true" ondragstart="drag(event)">
+            <!-- draggable = true permite que a imagem seja arrastada quando o usuário interagir com ela.-->
+            <!--quando esse evento de arrastar ocorre, a função drag(event) é chamada.-->
+        </div>
+    </div>
+
+    <script>
+        function allowDrop(ev) { //o allowDrop(ev) permite a soltar elementos na caixa
+          ev.preventDefault();   //evita que o navegador trate o evento de soltar como padrão
+        }
+        
+        function drag(ev) { //drag(ev) é chamada quando o elemento de imagem é arrastado. Define os dados que serão transferidos
+          ev.dataTransfer.setData("text", ev.target.id); //definir os dados que serão transferidos durante uma operação de arrastar e soltar
+        }
+        
+        function drop(ev) { // drop(ev) é chamada quando o elemento de imagem é solto na caixa. Basicamente adiciona a imagem
+          ev.preventDefault(); //evita que o navegador trate o evento de soltar como padrão
+          var data = ev.dataTransfer.getData("text"); //obtem os dados transferidos durante a operação de arrastar e soltar atraves do ID
+          ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</body>
+</html>

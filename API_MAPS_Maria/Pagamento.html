@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Arquivo css-->
+    <link rel="stylesheet" href="CSS/Pagamento.css">
+    <title>Pagamento</title>
+</head>
+    <body>
+        <div id="sombra"></div>
+        <!--conteiner-->
+        <div id="cabeçalho">
+            <a href="Principal.html"><img id="logo" src="IMG/123m-sem-escrita.png"></a>
+            <a href="Login.html"><p>LOGIN</p></a>
+            <div class="dropdown">
+                <div class="menu"><p>EXPLORE O BRASIL</p></div>
+                    <div class="dropdown-content">
+                        <a href="Info-gerais.html">  Informações Gerais</a>
+                        <a href="Cheklist-viagem.html">  Checkist de viagem </a>      
+                    </div>
+            </div>
+
+            <div class="dropdown">
+                <div class="menu"><p>AGENDE</p></div>
+                    <div class="dropdown-content">
+                        <a href="Passeios.html"> Passeios </a>
+                        <a href="Acomodações.html"> Acomodações</a>      
+                    </div>
+            </div>
+            <a href="Favoritos.html"><p>FAVORITOS</p></a>
+            <input type="text" placeholder="      Busque seu destino" id="label">
+            <img class="redes" src="IMG/facebook (1).png">
+            <img class="redes" src="IMG/instagram.png">
+            <img class="redes" src="IMG/twitter.png">
+        </div>
+        <div class="mensagem">
+            <h4>Finalize sua compra e garanta sua viagem dos sonhos com a 123 trilhas</h4>
+        </div>
+        <div class="corpo2">
+            <div class="caixa1">
+                <div class="meu-carrinho">
+                    <div class="titulo">
+                        <h4>Meu carrinho <a href="Passeios.html"><span class="continuar-comprando">Continuar comprando</span></a></h4>
+                    </div>
+                    <hr>
+                    <!--itens do carrinho-->
+                    <div class="item-carrinho">
+                        <div class="item-pt1">
+                            <img src="IMG/hotel1.jpg" class="img-item">
+                        </div>
+                        <div class="item-pt2">
+                            <div class="linha">
+                                <h4>ESTADIA RANCHO DO PEIXE<span class="float-right">R$ 422,90</span></h4>
+                            </div>
+                            <div class="linha">
+                                <h5 class="local-item">Praia do Preá - Ceará</h5>
+                            </div>
+                            <div class="linha">
+                                <div class="caixa-quantidade">
+                                    <div class="remover">
+                                        <img src="IMG/menos.png" class="add-remo">
+                                    </div>
+                                    <div class="qnt-itens">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="adicionar">
+                                        <img src="IMG/mais.png" class="add-remo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!--item do carrinho 2-->
+                    <div class="item-carrinho">
+                        <div class="item-pt1">
+                            <img src="IMG/passeios-sul5.jpg" class="img-item">
+                        </div>
+                        <div class="item-pt2">
+                            <div class="linha">
+                                <h4>TRILHA PICO DO RINOCERONTE<span class="float-right">R$ 40,99</span></h4>
+                            </div>
+                            <div class="linha">
+                                <h5 class="local-item">Bom Jardim da Serra - Santa Catarina</h5>
+                            </div>
+                            <div class="linha">
+                                <div class="caixa-quantidade">
+                                    <div class="remover">
+                                        <img src="IMG/menos.png" class="add-remo">
+                                    </div>
+                                    <div class="qnt-itens">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="adicionar">
+                                        <img src="IMG/mais.png" class="add-remo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="valor-total">
+                    <div class="titulo">
+                        <h4>Resumo do pedido</h4>
+                    </div>
+                    <hr>
+                    <div class="linha-inf">
+                        <h5>SUBTOTAL<span class="float-right">R$ 463,89</span></h5>
+                    </div>
+                    <div class="linha-inf">
+                        <h5>DESCONTOS <span class="float-right"> - R$ 15,65</span></h5>
+                    </div>
+                    <hr>
+                    <div class="linha-inf">
+                        <h4 id="total">TOTAL <span id="valor-total">R$ 448,24</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caixa2">
+                <div>
+                    <h4 class="titulo-c2">Pagamento</h4>
+                    <hr class="hr-pag">
+                </div>
+                <div class="conteudo-pag">
+                    <h5 id="sub-tit">Escolha uma forma de pagamento</h5>
+
+                    <div class="cartao">
+                        <div class="tipo-pagamento">
+                            <input type="checkbox" class="bolinha"><span class="txt1-tp">Cartão</span>
+                            <img src="IMG/bandeiras.png" class="bandeiras">
+                        </div>
+                        <form>
+                            <input type="text" class="info-card" placeholder="Número do cartão">
+                            <input type="text" class="info-card" placeholder="Nome impresso no cartão">
+                            <input type="text" class="info-card" placeholder="CVV">
+                            <input type="text" class="info-card" placeholder="Validade">
+                        </form>
+                    </div>
+
+                    <div class="tipo-pagamento">
+                        <input type="checkbox" class="bolinha"><span class="txt1-tp">Pix</span><span id="pix-desc">5% de desconto</span>
+                    </div>
+
+                    <div class="tipo-pagamento">
+                        <input type="checkbox" class="bolinha"><span class="txt1-tp">Boleto</span>
+                    </div>
+                    <a href="pagina-espelho.html"><button class="comprar-agora">Finalizar compra</button></a> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

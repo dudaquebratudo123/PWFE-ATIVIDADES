@@ -1,0 +1,265 @@
+#cabeçalho{
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    background-color: rgba(26, 7, 104, 0.936);
+    border-radius: 15px solid #ffffff00;
+    color: aliceblue;
+    font-size: 18px;
+    width: 1505px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cabeçalho:hover{
+    background-color: rgba(26, 7, 104, 0.678);
+}
+
+#logo{
+    width: 150px;
+    height: 100px;
+}
+
+.redes{
+    width: 30px;
+    height: 30px;
+}
+
+#label{
+    height: 19px;
+    border: 1px solid rgb(255, 252, 252);
+    border-radius: 5px;
+    background-color: rgba(26, 7, 104, 0.344);
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+#hr{
+    margin-top: 10px;
+    width: 800x;
+    z-index: -1
+}
+
+a:link{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+p{
+    color: #fff
+}
+
+
+p:hover{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color:rgb(26, 7, 104);
+    transition: transform 0.10s ease-in-out;
+    text-shadow: #fff;
+}
+
+img:hover{
+    box-shadow:0 0 14px rgb(255, 255, 255);
+    transition: 300ms linear;
+}
+
+/*menu*/
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height:40px;
+}
+
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(227, 227, 227, 0.821);
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 100;
+}
+
+.dropdown-content a:hover{
+    background-color: rgba(26, 7, 104, 0.241);
+    border-radius: 10px;
+}
+   
+.dropdown-content a{
+    color: rgb(72, 71, 69);
+    padding: 15px 20px;
+    display: block;
+}
+   
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+.mensagem{
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.658);
+    color: #6d6d6d;
+    border-radius: 20px solid #ffffff00;
+    width: 1505px;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrinho-flutuante{
+    position: fixed;
+    width: 100px;
+}
+
+.carrinho-flutuante:hover{
+    box-shadow:0 0 0px rgb(0, 0, 0);
+}
+
+/*corpo2*/
+.corpo2{
+    width: 1505px;
+    height: 400px;
+    box-shadow:0 0 10px rgb(0, 0, 0);
+}
+
+
+#img1-c2{
+    width: 1505px;
+    height: 520px;
+}
+
+
+#txt1-c2{
+    margin-top: -280px;
+    margin-left: 43%;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    font-size: 24px;
+}
+
+/*corpo 3*/
+.corpo3{
+    width: 1505px;
+    height: 980px;
+    margin-top: 100px;
+    justify-content: center;
+    box-shadow:0 0 10px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+.linha{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pacote{
+    width: 33.60%;
+    height: 100%;
+    position: relative;
+}
+
+.sombra-pacote{
+    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.img-pacote{
+    height: 100%;
+    width: auto;
+    padding-left: -20px;
+    cursor: pointer;
+}
+
+.img-pacote:hover{
+    box-shadow:0 0 0px rgb(0, 0, 0);
+    background-color: black;
+}
+
+.preço{
+    color: #303030;
+    width: 200px;
+    height: 35px;
+    background: rgba(178, 175, 177, 0.842);
+    margin: 20px 30px;
+    position: absolute;
+}
+
+#texto-preco{
+   margin:10px
+}
+
+p.titulo{
+    position: relative;
+    margin-top: -200px;
+    color: #ffffff;
+    font-family: 'Lato', serif !important;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-left: 30px; 
+}
+
+.coracao{
+    width: 40px;
+    left:440px;
+    top:10px;
+    position: absolute;
+}
+
+.adicionar-carrinho{
+    left:240px;
+    bottom:65px;
+    width: 50px;
+    position: absolute;
+}
+
+.coracao:hover, .adicionar-carrinho:hover{
+    transform: scale(1.2);
+    transition: ease-in 0.2s;
+    box-shadow:0 0 0px rgb(0, 0, 0);
+}
+
+.mensagem-final{
+    box-shadow:0 0 30px rgb(0, 0, 0);
+    background-color:rgba(26, 7, 104, 0.936);
+    color: #f6f6f6;
+    border-radius: 20px solid #ffffff00;
+    margin-top: 70px;
+    width: 1505px;
+    height: 100px;
+    font-size: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#direcionar-passeios{
+    color: #000000;
+}
+
+#direcionar-passeios:hover{
+    text-shadow: rgb(215, 214, 209) 1px 0 10px;
+    transform: capitalize;
+    transition: transform 0.10s ease-in-out;
+}

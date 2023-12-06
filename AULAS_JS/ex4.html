@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--exemplo 1-->
+    <p>Aguardar 3 segundos para dizer Olá</p>
+    <!--depois de 3000 milisegundos que vc clicar no botão, sua função sera executada-->
+    <button onclick="myVar = setTimeout(myFunction, 3000);">Clique aqui</button>
+    <!--exemplo 2 - interval(repete)-->
+    <p id="demo"></p>
+    <!--clear Interval interrompe a ação-->
+    <button onclick="clearInterval(myVar)">PARAR</button>
+    <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - -  - - </p>
+        <!--variações-->
+        <br><br>
+        <button onmouseup="dia()">DIA</button>
+        <p id="demo1"></p>
+        <button onmouseup="mes()">MES</button>
+        <p id="demo2"></p>
+        <button onmouseup="ano()">ANO</button>
+        <p id="demo3"></p>
+        <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - -  - - </p>
+    <!--exemplo 3 time out (uma vez so)-->
+    <button onclick="myVar = setTimeout(function(){alert('OI')}, 3000)">Aperte aqui</button>
+    <!--clear time out interrompe a espera-->
+    <button onclick="clearTimeout(myVar)">PARAR</button>
+
+    <!--exemplo 4-->
+    <br><br><p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - </p>
+    <button onclick="teste()">VEJA ESSE LINDO ARRANJO! SAI POR APENAS R$ 15,40</button>
+    <script src="JS/script4.js"></script>
+</body>
+</html>

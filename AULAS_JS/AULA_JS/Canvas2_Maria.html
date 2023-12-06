@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="meuCanvas" width="1000" height="700"></canvas>
+    <script>
+        let canvas = document.getElementById("meuCanvas");
+        const ctx = canvas.getContext("2d"); //passa a dimensão para o seu desenho
+        //divide a tela em dois eixos (que a forma irá percorrer)
+        let x = canvas.width / 2;
+        let y = canvas.height / 2;
+        let raio = 50;
+        let velX = 2;
+        let velY = 1;
+
+        function circulo(){
+            ctx.clearRect(0,0,canvas.width, canvas.height); //limpa os frames anteriores do canvas
+            ctx.fillStyle = "purple";  //define a cor de preenchimento
+            ctx.beginPath(); //necessário para iniciar
+            ctx.arc(x, y, raio, 0, Math.PI * 2); //desenhando p circulo
+            ctx.fill(); //preenche o círculo
+            //andando na tela
+            x += velX;
+            y += velY;
+            if(x + raio > canvas.width || x - raio < 0){
+                velX =- velX;
+                velY =- velY;
+            }
+            if(y + raio > canvas.height || y - raio < 0){
+                velX =- velX;
+                velY =- velY;
+            }
+            requestAnimationFrame(circulo); //criando frame
+        }
+        circulo();
+    </script>
+</body>
+</html>
